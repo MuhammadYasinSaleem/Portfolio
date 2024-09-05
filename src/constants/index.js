@@ -10,11 +10,7 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -22,7 +18,9 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    nextjs,
+    bootstrap,
+    wordpress
   } from "../assets";
   
   export const navLinks = [
@@ -89,8 +87,20 @@ import {
       icon: tailwind,
     },
     {
-      name: "Nextjs",
-      icon: docker,
+      name: "Next JS",
+      icon: nextjs,
+    },
+    {
+      name: "Bootstrap",
+      icon: bootstrap,
+    },
+    {
+      name: "WordPress",
+      icon: wordpress,
+    },
+    {
+      name: "Git",
+      icon: git,
     },
   ];
   
