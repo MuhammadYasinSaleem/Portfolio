@@ -30,13 +30,16 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import ecom from "./ecom.png"
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import fitness from "./fitness.png";
+import meme from "./meme.png";
+import weather from "./weather.png"
+import qoute from "./qoute.png"
 export {
   logo,
   bootstrap,
   wordpress,
   backend,
+  fitness,
   ecom,
   creator,
   mobile,
@@ -45,6 +48,8 @@ export {
   github,
   menu,
   close,
+  weather,
+  qoute,
   css,
   docker,
   figma,
@@ -62,7 +67,5 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  meme,
 };

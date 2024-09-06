@@ -3,11 +3,14 @@ import {
     backend,
     creator,
     web,
+    qoute,
     ecom,
     javascript,
     typescript,
+    weather,
     html,
     css,
+    fitness,
     reactjs,
     redux,
     tailwind,
@@ -16,11 +19,10 @@ import {
     starbucks,
     tesla,
     shopify,
-    jobit,
-    tripguide,
     nextjs,
     bootstrap,
-    wordpress
+    wordpress,
+    meme
   } from "../assets";
   
   export const navLinks = [
@@ -209,46 +211,72 @@ import {
       source_code_link: "https://github.com/MuhammadYasinSaleem/E-Commerce-Project?tab=readme-ov-file",
     },
     {
-      name: "Job IT",
+      name: "Fitness Exercise App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for exercises, view similar exercises for bodyparts and show realted youtube videos of current exercise.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Rapid API",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "material UI",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: fitness,
+      source_code_link: "https://github.com/MuhammadYasinSaleem/Fitness-Exercise-App",
     },
     {
-      name: "Trip Guide",
+      name: "Meme Generator App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An entertainment app for generating memes for fun purposes.",
       tags: [
         {
-          name: "nextjs",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "bootstrap",
           color: "green-text-gradient",
         },
+      ],
+      image: meme,
+      source_code_link: "https://github.com/MuhammadYasinSaleem/Meme-Generator-App",
+    },
+    {
+      name: "Weather App",
+      description:
+        "An informative app that tells the weather of different locations.",
+      tags: [
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Context Api",
+          color: "green-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: weather,
+      source_code_link: "https://github.com/MuhammadYasinSaleem/Weather-App",
+    },
+    {
+      name: "Random Qoute Generator",
+      description:
+        "An informative app that gives advices",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: qoute,
+      source_code_link: "https://github.com/MuhammadYasinSaleem/Random-Qoute-Generator",
     },
   ];
   
