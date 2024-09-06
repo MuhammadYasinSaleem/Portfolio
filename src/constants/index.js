@@ -3,6 +3,7 @@ import {
     backend,
     creator,
     web,
+    ecom,
     javascript,
     typescript,
     html,
@@ -15,7 +16,6 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
     jobit,
     tripguide,
     nextjs,
@@ -188,16 +188,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "E-commerce",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to buy diferent clothes for Men,Women and Teens, providing a convenient and efficient solution for ease of shopping needs.",
       tags: [
         {
-          name: "react",
+          name: "Next",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "sanity",
           color: "green-text-gradient",
         },
         {
@@ -205,8 +205,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ecom,
+      source_code_link: "https://github.com/MuhammadYasinSaleem/E-Commerce-Project?tab=readme-ov-file",
     },
     {
       name: "Job IT",

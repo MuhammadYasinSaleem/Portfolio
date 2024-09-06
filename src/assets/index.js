@@ -29,7 +29,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import ecom from "./ecom.png"
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 export {
@@ -37,6 +37,7 @@ export {
   bootstrap,
   wordpress,
   backend,
+  ecom,
   creator,
   mobile,
   nextjs,
