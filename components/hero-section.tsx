@@ -58,7 +58,7 @@ export default function HeroSection() {
           <div className="flex items-center justify-center">
             <div className="relative aspect-square overflow-hidden rounded-full border-4 border-primary/20 w-[280px] h-[280px] md:w-[400px] md:h-[400px]">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/yasin.png?height=400&width=400"
                 alt="Muhammad Yasin"
                 className="object-cover"
                 width={400}

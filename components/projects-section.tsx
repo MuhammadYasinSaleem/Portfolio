@@ -52,7 +52,7 @@ export default function ProjectsSection() {
     {
       id: 4,
       title: "Fitness Exercise App",
-      description: "A headless CMS with a user-friendly interface for managing digital content across platforms.",
+      description: "A user-friendly interface for displaying fitness exercises and their details and showing suggestions of related youtube videos",
       image: "/fitness.png?height=300&width=500",
       tags: ["React", "Material UI", "React-router-dom", "RapidAPI"],
       liveUrl: "https://fitness-exercise-app-nu.vercel.app/",
@@ -61,12 +61,12 @@ export default function ProjectsSection() {
     },
     {
       id: 5,
-      title: "Real Estate Listing Platform",
-      description: "A platform for listing and searching real estate properties with advanced filtering options.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Next.js", "PostgreSQL", "Google Maps API", "AWS S3"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      title: "Restaurant App",
+      description: "Seamlessly book your table online with our sleek, full-stack restaurant reservation app",
+      image: "/restaurant.png?height=300&width=500",
+      tags: ["React", "Node.js", "Express", "MongoDB"],
+      liveUrl: "https://restaurant-app-three-pink.vercel.app/",
+      githubUrl: "https://github.com/MuhammadYasinSaleem/Restaurant-App",
       category: "fullstack",
     },
     {
