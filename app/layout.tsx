@@ -9,16 +9,6 @@ export const metadata: Metadata = {
   title: "Muhammad Yasin | Full Stack Developer",
   description:
     "Portfolio website of Muhammad Yasin, a full stack developer specializing in React, Node.js, and modern web technologies.",
-    openGraph: {
-      images: [
-      {
-        url: "/logo.svg", 
-        width: 1200,
-        height: 630,
-        alt: "Muhammad Yasin's Portfolio Preview",
-      },
-    ],
-  },
 }
 
 export default function RootLayout({
