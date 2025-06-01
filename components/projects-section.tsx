@@ -11,7 +11,7 @@ type Project = {
   description: string
   image: string
   tags: string[]
-  liveUrl: string
+  liveUrl: string 
   githubUrl: string
   category: string
 }
@@ -87,7 +87,7 @@ export default function ProjectsSection() {
       description: " full-stack, AI-powered web platform for early lung cancer detection and awareness building. It leverages cutting-edge deep learning models and natural language processing to assist users in understanding their lung health",
       image: "/diagnosense.png?height=300&width=500",
       tags: ["React", "Express", "Node.js", "MongoDB", "Fastapi","RAG","CNN+ViT"],
-      liveUrl: "https://weather-app-eight-delta-32.vercel.app/",
+      liveUrl: "",
       githubUrl: "https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App",
       category: "fullstack_AI",
     },
