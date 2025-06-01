@@ -81,7 +81,16 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com/MuhammadYasinSaleem/Weather-App",
       category: "frontend",
     },
-   
+    {
+      id: 7,
+      title: "Lung Cancer Detection App",
+      description: " full-stack, AI-powered web platform for early lung cancer detection and awareness building. It leverages cutting-edge deep learning models and natural language processing to assist users in understanding their lung health",
+      image: "/diagnosense.png?height=300&width=500",
+      tags: ["React", "Express", "Node.js", "MongoDB", "Fastapi","RAG","CNN+ViT"],
+      liveUrl: "https://weather-app-eight-delta-32.vercel.app/",
+      githubUrl: "https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App",
+      category: "fullstack_AI",
+    },
   ]
 
   const [filter, setFilter] = useState("all")
@@ -140,6 +149,17 @@ export default function ProjectsSection() {
               }
             >
               Full Stack
+            </Button>
+            <Button
+              variant={filter === "fullstack_AI" ? "default" : "outline"}
+              onClick={() => setFilter("fullstack_AI")}
+              className={
+                filter === "fullstack_AI"
+                  ? "bg-primary text-black"
+                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+              }
+            >
+              Full Stack AI
             </Button>
           </div>
         </div>
