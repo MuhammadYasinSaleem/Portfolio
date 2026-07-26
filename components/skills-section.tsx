@@ -5,19 +5,25 @@ import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function SkillsSection() {
-  const frontendSkills = ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Redux"]
+  const languagesSkills = ["Python", "JavaScript", "TypeScript", "SQL"]
 
-  const backendSkills = ["Node.js", "Express", "Python", "Fastapi", "RESTful APIs", "MongoDB", "SQL"]
+  const backendSkills = ["Django", "Django REST Framework", "FastAPI", "Node.js", "Express.js", "RESTful APIs", "JWT Authentication"]
 
-  const otherSkills = ["Git", "Postman", "Selenium"]
+  const frontendSkills = ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS"]
+
+  const databaseSkills = ["PostgreSQL", "MongoDB"]
+
+  const devopsSkills = ["AWS (EC2, S3, RDS)", "Docker", "Nginx", "GitHub Actions", "Celery", "Git"]
+
+  const aiMlSkills = ["CNN-based Models", "Vision Transformers", "Retrieval-Augmented Generation (RAG)"]
 
   // Track visibility for each card
-  const [visibleCards, setVisibleCards] = useState<boolean[]>(Array(3).fill(false))
+  const [visibleCards, setVisibleCards] = useState<boolean[]>(Array(6).fill(false))
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
     // Initialize refs array
-    cardRefs.current = cardRefs.current.slice(0, 3)
+    cardRefs.current = cardRefs.current.slice(0, 6)
 
     // Create observers for each card
     const observers = cardRefs.current.map((ref, index) => {
@@ -68,12 +74,12 @@ export default function SkillsSection() {
             className={`tilt-card ${visibleCards[0] ? "fade-in-left" : "fade-in-left-hidden"}`}
           >
             <CardHeader>
-              <CardTitle>Frontend Development</CardTitle>
-              <CardDescription>Building responsive user interfaces</CardDescription>
+              <CardTitle>Languages</CardTitle>
+              <CardDescription>Programming languages I use</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="grid grid-cols-1 gap-2">
-                {frontendSkills.map((skill, index) => (
+                {languagesSkills.map((skill, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-primary" />
                     <span>{skill}</span>
@@ -89,7 +95,7 @@ export default function SkillsSection() {
           >
             <CardHeader>
               <CardTitle>Backend Development</CardTitle>
-              <CardDescription>Creating robust server-side applications</CardDescription>
+              <CardDescription>Server-side frameworks and APIs</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="grid grid-cols-1 gap-2">
@@ -104,16 +110,76 @@ export default function SkillsSection() {
           </Card>
           <Card
             ref={(el) => (cardRefs.current[2] = el)}
-            className={`md:col-span-2 lg:col-span-1 tilt-card ${visibleCards[2] ? "fade-in-left" : "fade-in-left-hidden"}`}
+            className={`tilt-card ${visibleCards[2] ? "fade-in-left" : "fade-in-left-hidden"}`}
             style={{ animationDelay: "0.2s" }}
           >
             <CardHeader>
-              <CardTitle>Other Skills</CardTitle>
-              <CardDescription>Tools and methodologies I use</CardDescription>
+              <CardTitle>Frontend Development</CardTitle>
+              <CardDescription>Building responsive user interfaces</CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="grid grid-cols-1 gap-2">
-                {otherSkills.map((skill, index) => (
+                {frontendSkills.map((skill, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+          <Card
+            ref={(el) => (cardRefs.current[3] = el)}
+            className={`tilt-card ${visibleCards[3] ? "fade-in-left" : "fade-in-left-hidden"}`}
+            style={{ animationDelay: "0.3s" }}
+          >
+            <CardHeader>
+              <CardTitle>Databases</CardTitle>
+              <CardDescription>Data storage solutions</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="grid grid-cols-1 gap-2">
+                {databaseSkills.map((skill, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+          <Card
+            ref={(el) => (cardRefs.current[4] = el)}
+            className={`tilt-card ${visibleCards[4] ? "fade-in-left" : "fade-in-left-hidden"}`}
+            style={{ animationDelay: "0.4s" }}
+          >
+            <CardHeader>
+              <CardTitle>DevOps & Cloud</CardTitle>
+              <CardDescription>Infrastructure and deployment</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="grid grid-cols-1 gap-2">
+                {devopsSkills.map((skill, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+          <Card
+            ref={(el) => (cardRefs.current[5] = el)}
+            className={`tilt-card ${visibleCards[5] ? "fade-in-left" : "fade-in-left-hidden"}`}
+            style={{ animationDelay: "0.5s" }}
+          >
+            <CardHeader>
+              <CardTitle>AI/ML</CardTitle>
+              <CardDescription>Machine learning and AI technologies</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="grid grid-cols-1 gap-2">
+                {aiMlSkills.map((skill, index) => (
                   <li key={index} className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-primary" />
                     <span>{skill}</span>

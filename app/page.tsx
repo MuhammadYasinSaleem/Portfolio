@@ -39,9 +39,9 @@ export default function Home() {
           </a>
         </div>
         <AboutSection />
+        <ExperienceSection />
         <EducationSection />
         <CertificationsSection />
-        <ExperienceSection />
         <SkillsSection />
         <InterestsSection />
         <ProjectsSection />

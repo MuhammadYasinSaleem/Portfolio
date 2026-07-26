@@ -15,20 +15,12 @@ type Education = {
 export default function EducationSection() {
   const educationHistory: Education[] = [
     {
-      degree: "B.S. in Computer Science",
+      degree: "Bachelor of Science in Computer Science",
       institution: "Bahria University",
       location: "Lahore, Pakistan",
       period: "2021 - 2025",
       description:
-        "Graduated with a CGPA of 3.81. Specialized in software engineering and web development. Participated in various hackathons and coding competitions.",
-    },
-    {
-      degree: "F.S.c Pre-Engineering",
-      institution: "Punjab College",
-      location: "Lahore, Pakistan",
-      period: "2018 - 2020",
-      description:
-        "Completed FSC Pre-Engineering with 86% marks and a strong foundation in mathematics, physics, and problem-solving.",
+        "CGPA 3.83/4.0 - Gold Medalist. Specialized in software engineering and web development with focus on building scalable applications and AI-powered solutions.",
     }
   ]
 

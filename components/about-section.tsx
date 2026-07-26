@@ -13,20 +13,13 @@ export default function AboutSection() {
         <div className="mx-auto max-w-3xl py-12">
           <div className="space-y-6 text-center sm:text-left">
             <p className="text-lg text-white">
-              "Full-stack developer specializing in the MERN stack, with a strong passion for AI—building intelligent,
-              scalable solutions that merge user experience with cutting-edge innovation." "From crafting sleek frontend
-              interfaces to deploying AI-powered features, I turn complex ideas into impactful, real-world
-              applications."
+              Full-stack software engineer specializing in Django/DRF, React, and Next.js, with a track record of designing scalable backend systems and AWS-based infrastructure. Worked across multiple backend frameworks, including FastAPI and Express.js, with experience in RESTful API design, system architecture, and shipping production-ready applications with integrated AI capabilities.
             </p>
             <p className="text-white/70">
-              I started my journey as a frontend developer and gradually expanded my skills to include backend
-              development and database management. I'm constantly learning and exploring new technologies to stay at the
-              forefront of web development.
+              I focus on building robust, production-grade applications that solve real business problems. From designing complex backend systems to creating intuitive frontend interfaces, I turn requirements into scalable solutions.
             </p>
             <p className="text-white/70">
-              My approach to development focuses on creating clean, maintainable code that delivers exceptional user
-              experiences. I believe in the power of well-designed systems and intuitive interfaces to solve real-world
-              problems.
+              My approach emphasizes clean architecture, automated testing, and continuous integration. I believe in the power of well-designed systems and intuitive interfaces to deliver exceptional user experiences while maintaining technical excellence.
             </p>
           </div>
         </div>

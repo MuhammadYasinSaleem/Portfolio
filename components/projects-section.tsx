@@ -83,10 +83,10 @@ export default function ProjectsSection() {
     },
     {
       id: 7,
-      title: "Lung Cancer Detection App",
-      description: " full-stack, AI-powered web platform for early lung cancer detection and awareness building. It leverages cutting-edge deep learning models and natural language processing to assist users in understanding their lung health",
+      title: "DiagnoSense --- AI Lung Cancer Detection Platform",
+      description: "Built a full-stack MERN application integrating a hybrid CNN and Vision Transformer model to detect early-stage lung cancer from CT scan images, with predictions served via a dedicated FastAPI backend. Implemented secure JWT-based authentication, user dashboards, and route handling in Express.js. Integrated a RAG-based chatbot to deliver AI-driven health insights to users, extending the platform beyond diagnosis into interactive patient support.",
       image: "/diagnosense.png?height=300&width=500",
-      tags: ["React", "Express", "Node.js", "MongoDB", "Fastapi","RAG","CNN+ViT"],
+      tags: ["React", "Node.js", "FastAPI", "MongoDB", "CNN", "Vision Transformer", "RAG"],
       liveUrl: "",
       githubUrl: "https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App",
       category: "fullstack_AI",

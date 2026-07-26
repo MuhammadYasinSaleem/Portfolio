@@ -22,11 +22,10 @@ export default function HeroSection() {
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Muhammad Yasin</h1>
-              <p className="text-xl text-muted-foreground">Full Stack Developer</p>
+              <p className="text-xl text-muted-foreground">Full-Stack Software Engineer</p>
             </div>
             <p className="max-w-[600px] text-muted-foreground md:text-xl">
-              I'm a passionate full stack developer with 6 months of experience building web applications. I specialize
-              in React, Next.js, Node.js, Express and modern web technologies.
+              Full-stack software engineer specializing in Django/DRF, React, and Next.js, with a track record of designing scalable backend systems and AWS-based infrastructure. Experienced in RESTful API design, system architecture, and shipping production-ready applications with integrated AI capabilities.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link href="#contact" onClick={handleScrollTo("contact")}>
