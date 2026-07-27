@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function SkillsSection() {
   const languagesSkills = ["Python", "JavaScript", "TypeScript", "SQL"]
 
-  const backendSkills = ["Django", "Django REST Framework", "FastAPI", "Node.js", "Express.js", "RESTful APIs", "JWT Authentication"]
+  const backendSkills = ["Django", "Django REST Framework", "FastAPI", "Node.js", "Express.js", "RESTful APIs", "JWT Authentication","OAuth Authentication"]
 
   const frontendSkills = ["React.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS"]
 

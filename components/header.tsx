@@ -37,12 +37,13 @@ export default function Header() {
 
   const navItems = [
     { name: "about", label: "About" },
+    { name: "experience", label: "Experience" },
     { name: "education", label: "Education" },
     { name: "certifications", label: "Certifications" },
-    { name: "experience", label: "Experience" },
-    { name: "skills", label: "Skills" },
-    { name: "interests", label: "Interests" },
     { name: "projects", label: "Projects" },
+    { name: "skills", label: "Skills" },
+    { name: "blog", label: "Blog" },
+    { name: "interests", label: "Interests" },
     { name: "contact", label: "Contact" },
   ]
 

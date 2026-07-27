@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react"
 import AboutSection from "@/components/about-section"
+import BlogSection from "@/components/blog-section"
 import CertificationsSection from "@/components/certifications-section"
 import ContactSection from "@/components/contact-section"
 import EducationSection from "@/components/education-section"
@@ -42,9 +43,10 @@ export default function Home() {
         <ExperienceSection />
         <EducationSection />
         <CertificationsSection />
-        <SkillsSection />
-        <InterestsSection />
         <ProjectsSection />
+        <SkillsSection />
+        <BlogSection />
+        <InterestsSection />
         <ContactSection />
       </main>
       <Footer />

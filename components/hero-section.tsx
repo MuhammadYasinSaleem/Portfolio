@@ -2,9 +2,10 @@
 
 import type React from "react"
 
-import { ArrowRight, Github, Linkedin } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Download } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { trackEvent } from "@/lib/track"
 
 export default function HeroSection() {
   const handleScrollTo = (id: string) => (e: React.MouseEvent) => {
@@ -13,6 +14,10 @@ export default function HeroSection() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
+  }
+
+  const handleCVDownload = () => {
+    trackEvent("cv_download", "cv_download")
   }
 
   return (
@@ -31,6 +36,12 @@ export default function HeroSection() {
               <Link href="#contact" onClick={handleScrollTo("contact")}>
                 <Button className="gap-1">
                   Contact Me <ArrowRight className="h-4 w-4" />
+                </Button>
+              </Link>
+              <Link href="/Muhammad_Yasin.pdf" download="Muhammad_Yasin_CV.pdf" onClick={handleCVDownload}>
+                <Button variant="outline" className="text-black gap-1">
+                  <Download className="h-4 w-4" />
+                  Download CV
                 </Button>
               </Link>
               <Link href="#projects" onClick={handleScrollTo("projects")}>
