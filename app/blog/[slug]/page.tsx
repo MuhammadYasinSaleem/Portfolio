@@ -51,7 +51,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   }, [post])
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <style>{`
         .blog-content * {
           color: white !important;
