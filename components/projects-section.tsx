@@ -1,6 +1,6 @@
 "use client"
 
-import { ExternalLink, Github } from "lucide-react"
+import { Github } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -165,8 +165,8 @@ export default function ProjectsSection() {
         </div>
         <div className="mx-auto max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-3 grid">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="overflow-hidden tilt-card">
-              <div className="aspect-video overflow-hidden">
+            <Card key={project.id} className="overflow-hidden tilt-card h-full flex flex-col">
+              <div className="aspect-video overflow-hidden flex-shrink-0">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
@@ -175,11 +175,11 @@ export default function ProjectsSection() {
                   height={300}
                 />
               </div>
-              <CardHeader>
+              <CardHeader className="flex-shrink-0">
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, index) => (
                     <span
@@ -191,12 +191,7 @@ export default function ProjectsSection() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between">
-                <Button asChild variant="ghost" size="sm" className="gap-1 text-white hover:text-primary">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4" /> Live
-                  </a>
-                </Button>
+              <CardFooter className="flex justify-start flex-shrink-0">
                 <Button asChild variant="ghost" size="sm" className="gap-1 text-white hover:text-primary">
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" /> Code
