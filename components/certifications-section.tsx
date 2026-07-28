@@ -82,7 +82,7 @@ export default function CertificationsSection() {
   }, [certifications.length])
 
   return (
-    <section id="certifications" className="py-16 md:py-24 bg-[#161130]/50">
+    <section id="certifications" className="py-16 md:py-24 bg-card/50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -119,7 +119,7 @@ export default function CertificationsSection() {
                       </Link>
                     </CardDescription>
                   </div>
-                  <span className="inline-flex items-center rounded-full border border-[#ffffff1a] px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
+                  <span className="inline-flex items-center rounded-full border border-white/10 px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
                     {cert.date}
                   </span>
                 </div>
@@ -140,7 +140,7 @@ export default function CertificationsSection() {
                       {cert.skills.map((skill, idx) => (
                         <span
                           key={idx}
-                          className="inline-flex items-center rounded-full border border-[#ffffff1a] px-2.5 py-0.5 text-xs font-semibold bg-primary/5 text-white/90"
+                          className="inline-flex items-center rounded-full border border-white/10 px-2.5 py-0.5 text-xs font-semibold bg-primary/5 text-white/90"
                         >
                           {skill}
                         </span>

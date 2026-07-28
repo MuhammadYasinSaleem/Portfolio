@@ -53,11 +53,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom theme colors
-        custom: {
-          background: "#050917",
-          card: "#161130",
-        },
       },
       borderRadius: {
         lg: "var(--radius)",
