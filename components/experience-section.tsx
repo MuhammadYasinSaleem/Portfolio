@@ -98,7 +98,7 @@ export default function ExperienceSection() {
   }, [workExperience.length])
 
   return (
-    <section id="experience" className="py-16 md:py-24 bg-[#161130]/50">
+    <section id="experience" className="py-16 md:py-24 bg-card/50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -135,7 +135,7 @@ export default function ExperienceSection() {
                       )}
                     </CardDescription>
                   </div>
-                  <span className="inline-flex items-center rounded-full border border-[#ffffff1a] px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
+                  <span className="inline-flex items-center rounded-full border border-white/10 px-2.5 py-0.5 text-xs font-semibold bg-primary/10 text-primary">
                     {exp.period}
                   </span>
                 </div>

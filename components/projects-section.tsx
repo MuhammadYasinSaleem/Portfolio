@@ -98,7 +98,7 @@ export default function ProjectsSection() {
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
 
   return (
-    <section id="projects" className="py-16 md:py-24 bg-[#161130]/50">
+    <section id="projects" className="py-16 md:py-24 bg-card/50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

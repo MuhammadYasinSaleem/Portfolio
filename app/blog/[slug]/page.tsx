@@ -51,7 +51,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   }, [post])
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#050917' }}>
+    <div className="min-h-screen bg-background">
       <style>{`
         .blog-content * {
           color: white !important;
@@ -77,7 +77,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
         .blog-content h3 { font-size: 17px; }
         .blog-content p { margin: 16px 0; }
         .blog-content a {
-          color: #58a6ff !important;
+          color: hsl(var(--primary)) !important;
           text-decoration: underline;
         }
         .blog-content img {
@@ -95,14 +95,14 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           margin-top: 6px;
         }
         .blog-content blockquote {
-          border-left: 3px solid #58a6ff;
+          border-left: 3px solid hsl(var(--primary));
           margin: 20px 0;
           padding: 4px 16px;
           color: rgba(255, 255, 255, 0.7) !important;
           font-style: italic;
         }
         .blog-content pre {
-          background: #161130 !important;
+          background: hsl(var(--card)) !important;
           border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 8px;
           padding: 14px 16px;
@@ -112,7 +112,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
         .blog-content code {
           font-family: monospace;
           font-size: 13px;
-          background: #161130 !important;
+          background: hsl(var(--card)) !important;
           border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 4px;
           padding: 2px 6px;

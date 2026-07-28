@@ -122,7 +122,7 @@ export default function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="bg-[#161130] border-[#ffffff1a]"
+                    className="bg-card border-white/10"
                   />
                 </div>
                 <div className="space-y-2">
@@ -135,7 +135,7 @@ export default function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="bg-[#161130] border-[#ffffff1a]"
+                    className="bg-card border-white/10"
                   />
                 </div>
                 <div className="space-y-2">
@@ -147,7 +147,7 @@ export default function ContactSection() {
                     required
                     value={formData.subject}
                     onChange={handleChange}
-                    className="bg-[#161130] border-[#ffffff1a]"
+                    className="bg-card border-white/10"
                   />
                 </div>
                 <div className="space-y-2">
@@ -157,7 +157,7 @@ export default function ContactSection() {
                     name="message"
                     placeholder="Your message"
                     required
-                    className="min-h-[120px] bg-[#161130] border-[#ffffff1a]"
+                    className="min-h-[120px] bg-card border-white/10"
                     value={formData.message}
                     onChange={handleChange}
                   />
