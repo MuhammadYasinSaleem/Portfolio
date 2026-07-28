@@ -111,8 +111,8 @@ export default function ProjectsSection() {
               onClick={() => setFilter("all")}
               className={
                 filter === "all"
-                  ? "bg-primary text-black"
-                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+                  ? "bg-primary text-white"
+                  : "border-white/20 text-white hover:text-white hover:bg-primary/20"
               }
             >
               All
@@ -122,8 +122,8 @@ export default function ProjectsSection() {
               onClick={() => setFilter("frontend")}
               className={
                 filter === "frontend"
-                  ? "bg-primary text-black"
-                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+                  ? "bg-primary text-white"
+                  : "border-white/20 text-white hover:text-white hover:bg-primary/20"
               }
             >
               Frontend
@@ -133,8 +133,8 @@ export default function ProjectsSection() {
               onClick={() => setFilter("backend")}
               className={
                 filter === "backend"
-                  ? "bg-primary text-black"
-                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+                  ? "bg-primary text-white"
+                  : "border-white/20 text-white hover:text-white hover:bg-primary/20"
               }
             >
               Backend
@@ -144,8 +144,8 @@ export default function ProjectsSection() {
               onClick={() => setFilter("fullstack")}
               className={
                 filter === "fullstack"
-                  ? "bg-primary text-black"
-                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+                  ? "bg-primary text-white"
+                  : "border-white/20 text-white hover:text-white hover:bg-primary/20"
               }
             >
               Full Stack
@@ -155,8 +155,8 @@ export default function ProjectsSection() {
               onClick={() => setFilter("fullstack_AI")}
               className={
                 filter === "fullstack_AI"
-                  ? "bg-primary text-black"
-                  : "border-white/20 text-black hover:text-white hover:bg-primary/20"
+                  ? "bg-primary text-white"
+                  : "border-white/20 text-white hover:text-white hover:bg-primary/20"
               }
             >
               Full Stack AI

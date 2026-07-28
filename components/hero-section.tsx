@@ -39,13 +39,13 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <Link href="/Muhammad_Yasin.pdf" download="Muhammad_Yasin_CV.pdf" onClick={handleCVDownload}>
-                <Button variant="outline" className="text-black gap-1">
+                <Button variant="outline" className="text-white gap-1">
                   <Download className="h-4 w-4" />
                   Download CV
                 </Button>
               </Link>
               <Link href="#projects" onClick={handleScrollTo("projects")}>
-                <Button variant="outline" className="text-black">
+                <Button variant="outline" className="text-white">
                   View My Work
                 </Button>
               </Link>
