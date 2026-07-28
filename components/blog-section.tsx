@@ -29,10 +29,10 @@ function fmtDate(d: string | null): string {
 
 function BlogCard({ post }: { post: Post }) {
   return (
-    <Link href={`/blog/${post.slug}`} className="group block">
-      <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-card">
+    <Link href={`/blog/${post.slug}`} className="group block h-full">
+      <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-card h-full flex flex-col">
         {post.thumb ? (
-          <div className="aspect-video overflow-hidden bg-muted">
+          <div className="aspect-video overflow-hidden bg-muted flex-shrink-0">
             <img
               src={post.thumb}
               alt=""
@@ -44,12 +44,12 @@ function BlogCard({ post }: { post: Post }) {
             />
           </div>
         ) : (
-          <div className="aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
+          <div className="aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center flex-shrink-0">
             <span className="text-4xl font-bold text-primary/20">Blog</span>
           </div>
         )}
-        <div className="p-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+        <div className="p-4 flex flex-col flex-grow">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2 flex-shrink-0">
             {post.date && (
               <span className="flex items-center gap-1">
                 <Calendar className="h-4 w-4" />
@@ -63,11 +63,11 @@ function BlogCard({ post }: { post: Post }) {
           <h3 className="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors">
             {post.title}
           </h3>
-          <p className="text-sm text-muted-foreground line-clamp-3 mb-3">
+          <p className="text-sm text-muted-foreground line-clamp-3 mb-3 flex-grow">
             {post.snippet}
           </p>
           {post.tags && post.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 flex-shrink-0">
               {post.tags.map((tag, i) => (
                 <span
                   key={i}
