@@ -19,6 +19,26 @@ type Project = {
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      id: 7,
+      title: "DiagnoSense --- AI Lung Cancer Detection Platform",
+      description: "Built a full-stack MERN application integrating a hybrid CNN and Vision Transformer model to detect early-stage lung cancer from CT scan images, with predictions served via a dedicated FastAPI backend. Implemented secure JWT-based authentication, user dashboards, and route handling in Express.js. Integrated a RAG-based chatbot to deliver AI-driven health insights to users, extending the platform beyond diagnosis into interactive patient support.",
+      image: "/diagnosense.png?height=300&width=500",
+      tags: ["React", "Node.js", "FastAPI", "MongoDB", "CNN", "Vision Transformer", "RAG"],
+      liveUrl: "",
+      githubUrl: "https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App",
+      category: "fullstack_AI",
+    },
+    {
+      id: 8,
+      title: "Brain Tumor MRI Classification App",
+      description: "A FastAPI web app that classifies brain MRI scans into glioma, meningioma, pituitary tumor, or no tumor using an EffViT-Hybrid model (EfficientNetB0 backbone with a ViT-Tiny style transformer head). Returns per-class confidence scores alongside a Grad-CAM attention overlay so users can see where the model focused, served through a clinical-styled upload interface and JSON API.",
+      image: "/brain_tumor_app.png?height=300&width=500",
+      tags: ["FastAPI", "TensorFlow", "Keras", "EfficientNetB0", "Vision Transformer", "Grad-CAM", "OpenCV"],
+      liveUrl: "",
+      githubUrl: "https://github.com/MuhammadYasinSaleem/Brain-Tumor-App",
+      category: "fullstack_AI",
+    },
+    {
       id: 1,
       title: "E-Commerce Platform",
       description:
@@ -80,16 +100,6 @@ export default function ProjectsSection() {
       liveUrl: "https://weather-app-eight-delta-32.vercel.app/",
       githubUrl: "https://github.com/MuhammadYasinSaleem/Weather-App",
       category: "frontend",
-    },
-    {
-      id: 7,
-      title: "DiagnoSense --- AI Lung Cancer Detection Platform",
-      description: "Built a full-stack MERN application integrating a hybrid CNN and Vision Transformer model to detect early-stage lung cancer from CT scan images, with predictions served via a dedicated FastAPI backend. Implemented secure JWT-based authentication, user dashboards, and route handling in Express.js. Integrated a RAG-based chatbot to deliver AI-driven health insights to users, extending the platform beyond diagnosis into interactive patient support.",
-      image: "/diagnosense.png?height=300&width=500",
-      tags: ["React", "Node.js", "FastAPI", "MongoDB", "CNN", "Vision Transformer", "RAG"],
-      liveUrl: "",
-      githubUrl: "https://github.com/MuhammadYasinSaleem/Lung_Cancer_Detection_App",
-      category: "fullstack_AI",
     },
   ]
 
