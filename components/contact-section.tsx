@@ -30,22 +30,39 @@ export default function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+      const data = await res.json().catch(() => ({}))
 
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    })
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Failed to send message.")
+      }
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+      toast({
+        title: "Message sent!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      })
 
-    setIsSubmitting(false)
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+    } catch (err) {
+      toast({
+        variant: "destructive",
+        title: "Something went wrong",
+        description:
+          err instanceof Error ? err.message : "Please try again, or email me at m.yaseensalim@gmail.com.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
