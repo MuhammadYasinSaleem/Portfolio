@@ -1,105 +1,143 @@
 @import "tailwindcss";
-@config "../tailwind.config.ts";
-@plugin "tailwindcss-animate";
 
-@layer base {
-  :root {
-    --background: 225 64% 5.5%;
-    --foreground: 0 0% 100%;
-    --card: 248 48% 13%;
-    --card-foreground: 0 0% 100%;
-    --popover: 248 48% 13%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 248 48% 13%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 248 48% 13%;
-    --muted-foreground: 0 0% 70%;
-    --accent: 248 48% 13%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 100% / 0.1;
-    --input: 0 0% 100% / 0.1;
-    --ring: 217.2 91.2% 59.8%;
-    --radius: 0.5rem;
+/* Design tokens. Light by default, dark via OS preference, manual override via [data-theme]. */
+:root {
+  color-scheme: light;
+  --bg: #f6f6f2;
+  --surface: #ffffff;
+  --band: #eef1ef;
+  --line: #dcdcd5;
+  --line2: #bfc4c0;
+  --ink: #111516;
+  --muted: #556064;
+  --gold: #8a6400;
+  --accent: #0b7a73;
+  --accent-hi: #096761;
+  --on-accent: #ffffff;
+  --grid: rgba(11, 122, 115, 0.08);
+  --stripe-a: #ecede8;
+  --stripe-b: #e4e6e1;
+  --cell: #e3e7e4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0b0d0e;
+    --surface: #101315;
+    --band: #0d1214;
+    --line: #222a2d;
+    --line2: #35403f;
+    --ink: #e9eced;
+    --muted: #98a4a7;
+    --gold: #e0b840;
+    --accent: #4fd1c5;
+    --accent-hi: #7fe3d9;
+    --on-accent: #06201e;
+    --grid: rgba(79, 209, 197, 0.05);
+    --stripe-a: #12171a;
+    --stripe-b: #0e1214;
+    --cell: #161c1e;
   }
 }
 
-/* Animation keyframes */
-@keyframes slideInUp {
-  from {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b0d0e;
+  --surface: #101315;
+  --band: #0d1214;
+  --line: #222a2d;
+  --line2: #35403f;
+  --ink: #e9eced;
+  --muted: #98a4a7;
+  --gold: #e0b840;
+  --accent: #4fd1c5;
+  --accent-hi: #7fe3d9;
+  --on-accent: #06201e;
+  --grid: rgba(79, 209, 197, 0.05);
+  --stripe-a: #12171a;
+  --stripe-b: #0e1214;
+  --cell: #161c1e;
 }
 
-/* FadeInLeft animation */
-@keyframes fadeInLeft {
-  from {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-band: var(--band);
+  --color-line: var(--line);
+  --color-line2: var(--line2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-gold: var(--gold);
+  --color-accent: var(--accent);
+  --color-accent-hi: var(--accent-hi);
+  --color-on-accent: var(--on-accent);
+  --font-display: var(--font-instrument), Georgia, serif;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
 }
 
-/* Card animations - slideInUp */
-.education-card-hidden {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: none;
-  will-change: transform, opacity;
-}
-
-.education-card {
-  animation: slideInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  will-change: transform, opacity;
-}
-
-/* Card animations - fadeInLeft */
-.fade-in-left-hidden {
-  opacity: 0;
-  transform: translateX(-60px);
-  transition: none;
-  will-change: transform, opacity;
-}
-
-.fade-in-left {
-  animation: fadeInLeft 0.6s ease-out forwards;
-  will-change: transform, opacity;
-}
-
-/* Custom theme with specific colors */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Add padding to account for fixed header */
+  scroll-padding-top: 80px;
 }
 
-/* Card tilting effect */
-.tilt-card {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transition: transform 0.3s ease;
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-.tilt-card:hover {
-  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
-@layer base {
-  * {
-    @apply border-border;
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.stripes {
+  background: repeating-linear-gradient(135deg, var(--stripe-a) 0 10px, var(--stripe-b) 10px 20px);
+}
+
+.grid-band {
+  background-color: var(--band);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Scroll reveal: content stays visible without JS or with reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  body {
-    @apply bg-background text-foreground;
+  .js .reveal.in {
+    opacity: 1;
+    transform: none;
   }
+  html { scroll-behavior: smooth; }
 }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Rendered Medium article body */
+.post-content { font-size: 17px; line-height: 1.8; }
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 { font-family: var(--font-instrument), serif; font-weight: 400; line-height: 1.15; margin: 2rem 0 0.75rem; }
+.post-content h1, .post-content h2 { font-size: 2rem; }
+.post-content h3, .post-content h4 { font-size: 1.5rem; }
+.post-content p { margin: 1rem 0; }
+.post-content a { color: var(--accent); text-decoration: underline; }
+.post-content img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; border: 1px solid var(--line); }
+.post-content figcaption { font-size: 13px; color: var(--muted); text-align: center; }
+.post-content blockquote { border-left: 3px solid var(--accent); margin: 1.5rem 0; padding: 0.25rem 1rem; color: var(--muted); font-style: italic; }
+.post-content pre { background: var(--surface); border: 1px solid var(--line); padding: 14px 16px; overflow-x: auto; margin: 1.25rem 0; }
+.post-content code { font-family: var(--font-jetbrains), monospace; font-size: 0.85em; background: var(--surface); padding: 2px 6px; }
+.post-content pre code { padding: 0; background: none; }
+.post-content ul, .post-content ol { margin: 1rem 0 1rem 1.5rem; list-style: revert; }
