@@ -9,7 +9,7 @@ export const profile = {
   github: "https://github.com/MuhammadYasinSaleem",
   linkedin: "https://www.linkedin.com/in/muhammadyasinsaleem/",
   medium: "https://medium.com/@m.yaseensalim",
-  cv: "/Muhammad_Yasin.pdf",
+  cv: "/Muhammad_Yasin_CV.pdf",
 }
 
 export const nav = [
@@ -121,13 +121,6 @@ export const timeline = [
     org: "Innovaxel · Aug 2025 – Present",
     body: "Enterprise SaaS platforms and backend systems. Core developer on Peoplance and Advanced Alloys: Django REST APIs, Celery workers, Xero integration and AWS deployments.",
     tags: ["Django", "FastAPI", "React", "PostgreSQL", "AWS"],
-  },
-  {
-    kind: "Experience",
-    title: "Software Engineer Intern",
-    org: "Technier · Mar 2025 – Jul 2025",
-    body: "MERN-stack team member building React UI components and Node/Express REST endpoints backed by MongoDB.",
-    tags: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
     kind: "Education",
