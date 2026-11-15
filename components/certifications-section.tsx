@@ -1,6 +1,6 @@
 "use client"
 
-import { Award, Calendar, ExternalLink } from "lucide-react"
+import { Award, Calendar, ExternalLink } from "@/components/icons"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"

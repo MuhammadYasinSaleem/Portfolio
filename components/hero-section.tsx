@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { ArrowRight, Github, Linkedin, Download } from "lucide-react"
+import { ArrowRight, Download, Github, Linkedin } from "@/components/icons"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { trackEvent } from "@/lib/track"

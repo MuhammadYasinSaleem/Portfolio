@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Heart, Code, Palette, BookOpen, Globe, Coffee, Lightbulb, Camera } from "lucide-react"
+import { Heart, Code, Palette, BookOpen, Globe, Coffee, Lightbulb, Camera } from "@/components/icons"
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 

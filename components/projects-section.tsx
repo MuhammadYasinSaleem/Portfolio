@@ -1,6 +1,6 @@
 "use client"
 
-import { Github } from "lucide-react"
+import { Github } from "@/components/icons"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"

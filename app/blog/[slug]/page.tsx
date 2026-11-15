@@ -2,7 +2,7 @@
 
 import { useEffect, useState, use } from "react"
 import Link from "next/link"
-import { ArrowLeft, Calendar, ExternalLink } from "lucide-react"
+import { ArrowLeft, Calendar, ExternalLink } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 
 interface Post {

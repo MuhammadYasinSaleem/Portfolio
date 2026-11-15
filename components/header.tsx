@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { Menu, X } from "lucide-react"
+import { Menu, X } from "@/components/icons"
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"

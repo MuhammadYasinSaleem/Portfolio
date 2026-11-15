@@ -1,6 +1,6 @@
 "use client"
 
-import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react"
+import { Briefcase, Calendar, MapPin, ExternalLink } from "@/components/icons"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
