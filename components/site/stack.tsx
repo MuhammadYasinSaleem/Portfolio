@@ -21,7 +21,7 @@ export default function Stack() {
               {g.concepts && (
                 <ul className="mt-3.5 flex flex-col gap-1.5 border-t border-dashed border-line pt-3.5">
                   {g.concepts.map((i) => (
-                    <li key={i} className="font-display text-[19px] italic text-muted">
+                    <li key={i} className="font-display text-[19px] italic text-ink">
                       {i}
                     </li>
                   ))}
